@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Scot Traffic</string>
+    <string name="tab_list">Situations</string>
+    <string name="tab_search">Search</string>
+    <string name="tab_map">Map</string>
+    <string name="action_refresh">Refresh now</string>
+    <string name="action_settings">Auto-update interval</string>
+    <string name="action_about">About &amp; data source</string>
+
+    <string name="filter_all">All (%1$d)</string>
+    <string name="filter_incidents">Incidents (%1$d)</string>
+    <string name="filter_roadworks">Roadworks (%1$d)</string>
+    <string name="filter_hint">Filter by description</string>
+    <string name="list_empty">No situations to show.</string>
+    <string name="list_loading">Loading traffic data…</string>
+
+    <string name="status_loading">Updating traffic data…</string>
+    <string name="status_live">Live data · updated %1$s</string>
+    <string name="status_live_next">Live data · updated %1$s · next update %2$s</string>
+    <string name="status_offline">Offline · showing data saved %1$s</string>
+    <string name="status_cache">Update failed · showing data saved %1$s</string>
+    <string name="status_sample">Sample data · add your Traffic Scotland keys to get live data</string>
+    <string name="status_none">No data available · check your connection</string>
+
+    <string name="detail_placeholder">Select a situation to see its details</string>
+    <string name="detail_show_on_map">Show on map</string>
+    <string name="detail_impact">Impact</string>
+    <string name="detail_validity">When</string>
+    <string name="detail_location">Location</string>
+    <string name="detail_record">Record</string>
+    <string name="detail_other">Other data in the feed</string>
+    <string name="detail_delays">Delays</string>
+    <string name="detail_lanes">Lanes</string>
+    <string name="detail_start">Starts</string>
+    <string name="detail_end">Ends</string>
+    <string name="detail_duration">Duration</string>
+    <string name="detail_direction">Direction</string>
+    <string name="detail_from">From</string>
+    <string name="detail_to">To</string>
+    <string name="detail_roads">Roads</string>
+    <string name="detail_type">Type</string>
+    <string name="detail_id">Reference</string>
+    <string name="detail_source">Source</string>
+    <string name="detail_created">Created</string>
+    <string name="detail_updated">Last updated</string>
+    <string name="detail_probability">Probability</string>
+    <string name="detail_compliance">Compliance</string>
+    <string name="detail_urgent">Urgent</string>
+
+    <string name="search_by_road">By road</string>
+    <string name="search_nearby">Nearby</string>
+    <string name="search_road_hint">Road name, e.g. M8 or A9</string>
+    <string name="search_go">Search</string>
+    <string name="search_popular">Roads with the most situations</string>
+    <string name="search_from">Search from</string>
+    <string name="search_my_location">Use my location</string>
+    <string name="search_radius">Within %1$d km</string>
+    <string name="search_results">%1$d results</string>
+    <string name="search_results_none">No results</string>
+    <string name="search_show_map">Show on map</string>
+    <string name="search_prompt">Enter a road name to search</string>
+    <string name="location_denied">Location permission denied, using a fixed location instead</string>
+    <string name="location_unavailable">Could not get your location, using a fixed location instead</string>
+    <string name="location_finding">Finding your location…</string>
+    <string name="my_location">My location</string>
+
+    <string name="map_show_all">All</string>
+    <string name="map_show_road">Road search</string>
+    <string name="map_show_nearby">Nearby</string>
+    <string name="map_show_selected">Selected</string>
+    <string name="map_no_key">No Google Maps API key set. Add MAPS_API_KEY to local.properties to see the map.</string>
+    <string name="map_count">%1$d on map</string>
+
+    <string name="settings_title">Automatic update interval</string>
+    <string name="about_title">About</string>
+    <string name="about_text">Traffic information for Scottish trunk roads and motorways.\n\nData source: Traffic Scotland DATEX II feeds (Unplanned events and Current roadworks), provided by Transport Scotland.\n\nIcons: original artwork drawn for this app.\n\nColour key for delays: green = none, yellow = delays, orange = long delays, red = very long delays.\nColour key for duration: green = up to 3 days, orange = up to 4 weeks, red = over 4 weeks.</string>
+    <string name="ok">OK</string>
+    <string name="cd_type_icon">Situation type icon</string>
+</resources>

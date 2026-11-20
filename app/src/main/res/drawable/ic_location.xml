@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Original icon drawn for this project (no third-party artwork). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24"
+    android:tint="?attr/colorControlNormal">
+    <path android:fillColor="@android:color/white" android:fillType="evenOdd" android:pathData="M12,8 A4,4 0 1,1 11.99,8 Z"/>
+    <path android:fillColor="@android:color/white" android:fillType="evenOdd" android:pathData="M11,1 H13 V4.07 C16.61,4.52 19.48,7.39 19.93,11 H23 V13 H19.93 C19.48,16.61 16.61,19.48 13,19.93 V23 H11 V19.93 C7.39,19.48 4.52,16.61 4.07,13 H1 V11 H4.07 C4.52,7.39 7.39,4.52 11,4.07 Z M12,6 A6,6 0 1,0 12.01,6 Z"/>
+</vector>

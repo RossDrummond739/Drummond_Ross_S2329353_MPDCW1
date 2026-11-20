@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_primary">#0B4F8A</color>
+    <color name="brand_on_primary">#FFFFFF</color>
+    <color name="brand_secondary">#FF8F00</color>
+    <color name="launcher_bg">#E3F2FD</color>
+    <color name="surface_bg">#F4F6F9</color>
+    <color name="text_secondary">#5F6B7A</color>
+
+    <!-- Situation categories -->
+    <color name="cat_roadworks">#E65100</color>
+    <color name="cat_road_closed">#C62828</color>
+    <color name="cat_lane">#6A1B9A</color>
+    <color name="cat_queue">#AD1457</color>
+    <color name="cat_accident">#D84315</color>
+    <color name="cat_obstruction">#5D4037</color>
+    <color name="cat_conditions">#0277BD</color>
+    <color name="cat_event">#2E7D32</color>
+    <color name="cat_other">#546E7A</color>
+
+    <!-- Delay severity (roadworks colour coding) -->
+    <color name="delay_none">#43A047</color>
+    <color name="delay_delays">#F9A825</color>
+    <color name="delay_long">#EF6C00</color>
+    <color name="delay_very_long">#C62828</color>
+
+    <!-- Planned duration -->
+    <color name="duration_short">#43A047</color>
+    <color name="duration_medium">#EF6C00</color>
+    <color name="duration_long">#C62828</color>
+    <color name="duration_unknown">#78909C</color>
+
+    <!-- Status banner -->
+    <color name="status_live">#2E7D32</color>
+    <color name="status_offline">#C62828</color>
+    <color name="status_sample">#6D4C41</color>
+    <color name="status_loading">#0B4F8A</color>
+</resources>
