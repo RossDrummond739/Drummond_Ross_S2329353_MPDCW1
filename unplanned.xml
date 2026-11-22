@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<soapenv:Body>
+<d2LogicalModel modelBaseVersion="2"
+                xmlns="http://datex2.eu/schema/2/2_0"
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				xsi:schemaLocation="http://datex2.eu/schema/2/2_0 http://datex2.eu/schema/2/2_3/DATEXIISchema_2_2_3.xsd">
+ <exchange>
+  <supplierIdentification>
+   <country>gb</country>
+   <nationalIdentifier>TrafficScotland</nationalIdentifier>
+  </supplierIdentification>
+ </exchange>
+ <payloadPublication xsi:type="SituationPublication" lang="eng">
+  <publicationTime>2026-11-22T21:11:41+00:00</publicationTime>
+  <publicationCreator>
+   <country>gb</country>
+   <nationalIdentifier>TrafficScotland</nationalIdentifier>
+  </publicationCreator>
+ 
+  <situation id="I_20261004_357_S" version="1">
+   <headerInformation>
+    <confidentiality>noRestriction</confidentiality>
+    <informationStatus>real</informationStatus>
+   </headerInformation>
+   <situationRecord xsi:type="RoadOrCarriagewayOrLaneManagement" id="I_20261004_357" version="48">
+    <situationRecordCreationReference>I_20261004_357</situationRecordCreationReference>
+    <situationRecordCreationTime>2026-10-04T20:34:57+01:00</situationRecordCreationTime>
+    <situationRecordVersionTime>2026-11-21T07:16:30+00:00</situationRecordVersionTime>
+    <situationRecordFirstSupplierVersionTime>2026-11-21T07:16:30+00:00</situationRecordFirstSupplierVersionTime>
+    <probabilityOfOccurrence>certain</probabilityOfOccurrence>
+    <source>
+     <sourceIdentification>TrafficScotland</sourceIdentification>
+     <sourceName>
+  	<values>
+  	 <value lang="en">TrafficScotland</value>
+  	</values>
+     </sourceName>
+     <sourceType>roadAuthorities</sourceType>
+    </source>
+    <validity>
+     <validityStatus>definedByValidityTimeSpec</validityStatus>
+     <validityTimeSpecification>
+      <overallStartTime>2026-10-04T20:34:08+01:00</overallStartTime>
+     </validityTimeSpecification>
+    </validity>
+    <impact>
+     <numberOfOperationalLanes>0</numberOfOperationalLanes>
+    </impact>
+    <generalPublicComment>
+     <comment>
+      <values>
+       <value lang="en">The A6091 is currently closed eastbound at Galafoot Bridge due to essential roadworks.</value>
+      </values>
+     </comment>
+    </generalPublicComment>
+    <groupOfLocations xsi:type="Linear">
+      <tpegLinearLocation>
+       <tpegDirection>eastBound</tpegDirection>
+       <tpegLinearLocationType>segment</tpegLinearLocationType>
+       <to xsi:type="TpegJunction">
+        <pointCoordinates>
+         <latitude>55.598543</latitude>
+         <longitude>-2.71775</longitude>
+        </pointCoordinates>
+        <ilc>
+         <descriptor>
+          <values>
+           <value lang="en">A6091</value>
+          </values>
+         </descriptor>
+         <tpegIlcPointDescriptorType>tpegIlcName1</tpegIlcPointDescriptorType>
+        </ilc>
+        <ilc>
+         <descriptor>
+          <values>
+           <value lang="en">B6359</value>
+          </values>
+         </descriptor>
+         <tpegIlcPointDescriptorType>tpegIlcName2</tpegIlcPointDescriptorType>
+        </ilc>
+        <otherName>
+         <descriptor>
+          <values>
+           <value lang="en">A6091 Melrose</value>
+          </values>
+         </descriptor>
+         <tpegOtherPointDescriptorType>intersectionName</tpegOtherPointDescriptorType>
+        </otherName>
+       </to>
+       <from xsi:type="TpegJunction">
+        <pointCoordinates>
+         <latitude>55.604505</latitude>
+         <longitude>-2.78722</longitude>
+        </pointCoordinates>
+        <ilc>
+         <descriptor>
+          <values>
+           <value lang="en">A6091</value>
+          </values>
+         </descriptor>
+         <tpegIlcPointDescriptorType>tpegIlcName1</tpegIlcPointDescriptorType>
+        </ilc>
+        <ilc>
+         <descriptor>
+          <values>
+           <value lang="en">A7</value>
+          </values>
+         </descriptor>
+         <tpegIlcPointDescriptorType>tpegIlcName2</tpegIlcPointDescriptorType>
+        </ilc>
+        <otherName>
+         <descriptor>
+          <values>
+           <value lang="en">A7 VMS B3 Sth of Gala</value>
+          </values>
+         </descriptor>
+         <tpegOtherPointDescriptorType>intersectionName</tpegOtherPointDescriptorType>
+        </otherName>
+       </from>
+      </tpegLinearLocation>
+    </groupOfLocations>
+    <complianceOption>mandatory</complianceOption>
+    <roadOrCarriagewayOrLaneManagementType>roadClosed</roadOrCarriagewayOrLaneManagementType>
+   </situationRecord>
+  </situation>
+ 
+  <situation id="I_20261112_295_S" version="1">
+   <headerInformation>
+    <confidentiality>noRestriction</confidentiality>
+    <informationStatus>real</informationStatus>
+   </headerInformation>
+   <situationRecord xsi:type="GeneralObstruction" id="I_20261112_295" version="2">
+    <situationRecordCreationReference>I_20261112_295</situationRecordCreationReference>
+    <situationRecordCreationTime>2026-11-20T09:28:40+00:00</situationRecordCreationTime>
+    <situationRecordVersionTime>2026-11-20T09:28:42+00:00</situationRecordVersionTime>
+    <situationRecordFirstSupplierVersionTime>2026-11-20T09:28:42+00:00</situationRecordFirstSupplierVersionTime>
+    <probabilityOfOccurrence>certain</probabilityOfOccurrence>
+    <source>
+     <sourceIdentification>TrafficScotland</sourceIdentification>
+     <sourceName>
+  	<values>
+  	 <value lang="en">TrafficScotland</value>
+  	</values>
+     </sourceName>
+     <sourceType>roadAuthorities</sourceType>
+    </source>
+    <validity>
+     <validityStatus>definedByValidityTimeSpec</validityStatus>
+     <validityTimeSpecification>
+      <overallStartTime>2026-11-12T11:11:39+00:00</overallStartTime>
+     </validityTimeSpecification>
+    </validity>
+    <impact>
+     <numberOfOperationalLanes>0</numberOfOperationalLanes>
+    </impact>
+    <generalPublicComment>
+     <comment>
+      <values>
+       <value lang="en">Cairn Lodge Services at M74 Junction 11 advises that bunker fuel is currently unavailable.</value>
+      </values>
+     </comment>
+    </generalPublicComment>
+    <groupOfLocations xsi:type="Linear">
+      <tpegLinearLocation>
+       <tpegDirection>bothWays</tpegDirection>
+       <tpegLinearLocationType>segment</tpegLinearLocationType>
+       <to xsi:type="TpegJunction">
+        <pointCoordinates>
+         <latitude>55.595779</latitude>
+         <longitude>-3.834451</longitude>
+        </pointCoordinates>
+        <name>
+         <descriptor>
+          <values>
+           <value lang="en">J11</value>
+          </values> 
+         </descriptor>
+         <tpegJunctionPointDescriptorType>junctionName</tpegJunctionPointDescriptorType>
+        </name>
+        <ilc>
+         <descriptor>
+          <values>
+           <value lang="en">M74</value>
+          </values>
+         </descriptor>
+         <tpegIlcPointDescriptorType>tpegIlcName1</tpegIlcPointDescriptorType>
+        </ilc>
+        <otherName>
+         <descriptor>
+          <values>
+           <value lang="en">M74 J11 Poneil</value>
+          </values>
+         </descriptor>
+         <tpegOtherPointDescriptorType>intersectionName</tpegOtherPointDescriptorType>
+        </otherName>
+       </to>
+       <from xsi:type="TpegJunction">
+        <pointCoordinates>
+         <latitude>55.572771</latitude>
+         <longitude>-3.810379</longitude>
+        </pointCoordinates>
+        <name>
+         <descriptor>
+          <values>
+           <value lang="en">J12</value>
+          </values> 
+         </descriptor>
+         <tpegJunctionPointDescriptorType>junctionName</tpegJunctionPointDescriptorType>
+        </name>
+        <ilc>
+         <descriptor>
+          <values>
+           <value lang="en">M74</value>
+          </values>
+         </descriptor>
+         <tpegIlcPointDescriptorType>tpegIlcName1</tpegIlcPointDescriptorType>
+        </ilc>
+        <otherName>
+         <descriptor>
+          <values>
+           <value lang="en">M74 J12 Millbank</value>
+          </values>
+         </descriptor>
+         <tpegOtherPointDescriptorType>intersectionName</tpegOtherPointDescriptorType>
+        </otherName>
+       </from>
+      </tpegLinearLocation>
+    </groupOfLocations>
+    <obstructionType>obstructionOnTheRoad</obstructionType>
+   </situationRecord>
+  </situation>
+ 
+  <situation id="I_20261122_341_S" version="1">
+   <headerInformation>
+    <confidentiality>noRestriction</confidentiality>
+    <informationStatus>real</informationStatus>
+   </headerInformation>
+   <situationRecord xsi:type="RoadOrCarriagewayOrLaneManagement" id="I_20261122_341" version="1">
+    <situationRecordCreationReference>I_20261122_341</situationRecordCreationReference>
+    <situationRecordCreationTime>2026-11-22T19:21:22+00:00</situationRecordCreationTime>
+    <situationRecordVersionTime>2026-11-22T19:21:22+00:00</situationRecordVersionTime>
+    <situationRecordFirstSupplierVersionTime>2026-11-22T19:21:22+00:00</situationRecordFirstSupplierVersionTime>
+    <probabilityOfOccurrence>certain</probabilityOfOccurrence>
+    <source>
+     <sourceIdentification>TrafficScotland</sourceIdentification>
+     <sourceName>
+  	<values>
+  	 <value lang="en">TrafficScotland</value>
+  	</values>
+     </sourceName>
+     <sourceType>roadAuthorities</sourceType>
+    </source>
+    <validity>
+     <validityStatus>definedByValidityTimeSpec</validityStatus>
+     <validityTimeSpecification>
+      <overallStartTime>2026-11-22T19:21:20+00:00</overallStartTime>
+     </validityTimeSpecification>
+    </validity>
+    <impact>
+     <numberOfOperationalLanes>0</numberOfOperationalLanes>
+    </impact>
+    <generalPublicComment>
+     <comment>
+      <values>
+       <value lang="en">The A83 is closed in both directions south of Tarbert due to overnight roadworks. A system of timed access is in operation.</value>
+      </values>
+     </comment>
+    </generalPublicComment>
+    <groupOfLocations xsi:type="Linear">
+      <tpegLinearLocation>
+       <tpegDirection>bothWays</tpegDirection>
+       <tpegLinearLocationType>segment</tpegLinearLocationType>
+       <to xsi:type="TpegNonJunctionPoint">
+        <pointCoordinates>
+         <latitude>55.862872</latitude>
+         <longitude>-5.415508</longitude>
+        </pointCoordinates>
+        <name>
+         <descriptor>
+          <values>
+           <value lang="en">A83</value>
+          </values>
+         </descriptor>
+         <tpegOtherPointDescriptorType>linkName</tpegOtherPointDescriptorType>
+        </name>
+        <name>
+         <descriptor>
+          <values>
+           <value lang="en">A83 Tarbert</value>
+          </values>
+         </descriptor>
+         <tpegOtherPointDescriptorType>nonLinkedPointName</tpegOtherPointDescriptorType>
+        </name>
+       </to>
+       <from xsi:type="TpegNonJunctionPoint">
+        <pointCoordinates>
+         <latitude>55.804553</latitude>
+         <longitude>-5.477202</longitude>
+        </pointCoordinates>
+        <name>
+         <descriptor>
+          <values>
+           <value lang="en">A83</value>
+          </values>
+         </descriptor>
+         <tpegOtherPointDescriptorType>linkName</tpegOtherPointDescriptorType>
+        </name>
+        <name>
+         <descriptor>
+          <values>
+           <value lang="en">A83 Kennacraig</value>
+          </values>
+         </descriptor>
+         <tpegOtherPointDescriptorType>nonLinkedPointName</tpegOtherPointDescriptorType>
+        </name>
+       </from>
+      </tpegLinearLocation>
+    </groupOfLocations>
+    <complianceOption>mandatory</complianceOption>
+    <roadOrCarriagewayOrLaneManagementType>roadClosed</roadOrCarriagewayOrLaneManagementType>
+   </situationRecord>
+  </situation>
+ 
+  <situation id="I_20261122_348_S" version="1">
+   <headerInformation>
+    <confidentiality>noRestriction</confidentiality>
+    <informationStatus>real</informationStatus>
+   </headerInformation>
+   <situationRecord xsi:type="RoadOrCarriagewayOrLaneManagement" id="I_20261122_348" version="2">
+    <situationRecordCreationReference>I_20261122_348</situationRecordCreationReference>
+    <situationRecordCreationTime>2026-11-22T19:53:54+00:00</situationRecordCreationTime>
+    <situationRecordVersionTime>2026-11-22T19:55:10+00:00</situationRecordVersionTime>
+    <situationRecordFirstSupplierVersionTime>2026-11-22T19:55:10+00:00</situationRecordFirstSupplierVersionTime>
+    <probabilityOfOccurrence>certain</probabilityOfOccurrence>
+    <source>
+     <sourceIdentification>TrafficScotland</sourceIdentification>
+     <sourceName>
+  	<values>
+  	 <value lang="en">TrafficScotland</value>
+  	</values>
+     </sourceName>
+     <sourceType>roadAuthorities</sourceType>
+    </source>
+    <validity>
+     <validityStatus>definedByValidityTimeSpec</validityStatus>
+     <validityTimeSpecification>
+      <overallStartTime>2026-11-22T19:53:49+00:00</overallStartTime>
+     </validityTimeSpecification>
+    </validity>
+    <impact>
+     <numberOfOperationalLanes>0</numberOfOperationalLanes>
+    </impact>
+    <generalPublicComment>
+     <comment>
+      <values>
+       <value lang="en">A725 southbound East Kilbride Expressway is closed between Main Street and Douglas Street for overnight roadworks. The southbound Main Street on-slip and Douglas Street off-slip are also closed.</value>
+      </values>
+     </comment>
+    </generalPublicComment>
+    <groupOfLocations xsi:type="Linear">
+      <tpegLinearLocation>
+       <tpegDirection>southBound</tpegDirection>
+       <tpegLinearLocationType>segment</tpegLinearLocationType>
+       <to xsi:type="TpegJunction">
+        <pointCoordinates>
+         <latitude>55.775544</latitude>
+         <longitude>-4.163108</longitude>
+        </pointCoordinates>
+        <ilc>
+         <descriptor>
+          <values>
+           <value lang="en">A725</value>
+          </values>
+         </descriptor>
+         <tpegIlcPointDescriptorType>tpegIlcName1</tpegIlcPointDescriptorType>
+        </ilc>
+        <ilc>
+         <descriptor>
+          <values>
+           <value lang="en">A749</value>
+          </values>
+         </descriptor>
+         <tpegIlcPointDescriptorType>tpegIlcName2</tpegIlcPointDescriptorType>
+        </ilc>
+        <otherName>
+         <descriptor>
+          <values>
+           <value lang="en">A725 Whirlies</value>
+          </values>
+         </descriptor>
+         <tpegOtherPointDescriptorType>intersectionName</tpegOtherPointDescriptorType>
+        </otherName>
+       </to>
+       <from xsi:type="TpegJunction">
+        <pointCoordinates>
+         <latitude>55.791608</latitude>
+         <longitude>-4.077444</longitude>
+        </pointCoordinates>
+        <ilc>
+         <descriptor>
+          <values>
+           <value lang="en">A725</value>
+          </values>
+         </descriptor>
+         <tpegIlcPointDescriptorType>tpegIlcName1</tpegIlcPointDescriptorType>
+        </ilc>
+        <ilc>
+         <descriptor>
+          <values>
+           <value lang="en">A724</value>
+          </values>
+         </descriptor>
+         <tpegIlcPointDescriptorType>tpegIlcName2</tpegIlcPointDescriptorType>
+        </ilc>
+        <otherName>
+         <descriptor>
+          <values>
+           <value lang="en">A725 Blantyre</value>
+          </values>
+         </descriptor>
+         <tpegOtherPointDescriptorType>intersectionName</tpegOtherPointDescriptorType>
+        </otherName>
+       </from>
+      </tpegLinearLocation>
+    </groupOfLocations>
+    <complianceOption>mandatory</complianceOption>
+    <roadOrCarriagewayOrLaneManagementType>roadClosed</roadOrCarriagewayOrLaneManagementType>
+   </situationRecord>
+  </situation>
+ 
+ </payloadPublication>
+</d2LogicalModel>
+</soapenv:Body>
+</soapenv:Envelope>

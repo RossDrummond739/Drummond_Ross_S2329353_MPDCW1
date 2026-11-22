@@ -3,6 +3,7 @@
      detail pane on the right, so the list/search/map and the details are visible together. -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -13,6 +14,7 @@
         android:layout_height="48dp"
         android:background="?attr/colorPrimary"
         android:theme="@style/ThemeOverlay.Material3.Dark.ActionBar"
+        app:popupTheme="@style/Theme.Traffic"
         app:titleTextColor="?attr/colorOnPrimary"
         app:title="@string/app_name" />
 

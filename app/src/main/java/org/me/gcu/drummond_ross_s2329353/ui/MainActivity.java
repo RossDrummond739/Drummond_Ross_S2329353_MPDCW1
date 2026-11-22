@@ -3,11 +3,15 @@ package org.me.gcu.drummond_ross_s2329353.ui;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProvider;
@@ -55,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         twoPane = findViewById(R.id.detail_container).getVisibility() == View.VISIBLE;
 
         MaterialToolbar toolbar = findViewById(R.id.toolbar);
+        applyWindowInsets(toolbar);
         toolbar.inflateMenu(R.menu.main_menu);
         toolbar.setOnMenuItemClickListener(item -> {
             int id = item.getItemId();
@@ -102,6 +107,38 @@ public class MainActivity extends AppCompatActivity {
         viewModel.getState().observe(this, this::renderStatus);
         viewModel.isOnline().observe(this, o -> renderStatus(viewModel.getState().getValue()));
         viewModel.getNextAutoRefresh().observe(this, t -> renderStatus(viewModel.getState().getValue()));
+    }
+
+    /**
+     * Apps targeting Android 15 are drawn edge-to-edge (behind the status and navigation bars).
+     * Pad the toolbar below the status bar / camera cutout, keep content clear of the side cutouts
+     * and navigation bar, and make room for the keyboard.
+     */
+    private void applyWindowInsets(MaterialToolbar toolbar) {
+        View root = findViewById(R.id.root);
+        View navView = findViewById(R.id.nav);
+        final int toolbarHeight = toolbar.getLayoutParams().height;
+        ViewCompat.setOnApplyWindowInsetsListener(root, (v, insets) -> {
+            Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars()
+                    | WindowInsetsCompat.Type.displayCutout());
+            int ime = insets.getInsets(WindowInsetsCompat.Type.ime()).bottom;
+
+            ViewGroup.LayoutParams lp = toolbar.getLayoutParams();
+            lp.height = toolbarHeight + bars.top;
+            toolbar.setLayoutParams(lp);
+            toolbar.setPadding(0, bars.top, 0, 0);
+
+            if (twoPane) {
+                // Landscape: nothing is docked at the bottom, so the whole layout sits above the nav bar
+                v.setPadding(bars.left, 0, bars.right, Math.max(ime, bars.bottom));
+            } else {
+                // Portrait: the bottom navigation bar extends behind the gesture bar
+                v.setPadding(bars.left, 0, bars.right, ime);
+                navView.setPadding(navView.getPaddingLeft(), navView.getPaddingTop(),
+                        navView.getPaddingRight(), ime > 0 ? 0 : bars.bottom);
+            }
+            return WindowInsetsCompat.CONSUMED;
+        });
     }
 
     @Override
